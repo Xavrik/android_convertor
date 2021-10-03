@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Convertor</string>
+    <string name="title">Конвертер</string>
+    <string name="ton">Тонны</string>
+    <string name="kilo">Килограммы</string>
+    <string name="grm">Граммы</string>
+    <string name="ton_count">Количесво Тонн:</string>
+    <string name="kilo_count">Колличество Килограмм:</string>
+    <string name="grm_count">Колличесто грамм:</string>
+    <string name="text_input">Введите число:</string>
+    <string name="save_btn">Сохранить</string>
+    <string name="list_btn">Страница списка</string>
+
+</resources>
