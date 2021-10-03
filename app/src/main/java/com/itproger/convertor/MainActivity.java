@@ -2,6 +2,7 @@ package com.itproger.convertor;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentValues;
 import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
@@ -16,6 +17,8 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
     String[] weight = { "Тонны", "Киллограмы", "Граммы"};
@@ -28,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
     private TextView in_grm;
     private String item;
     private DataBase dataBase;
-    Button save_btn;
+    private Button save_btn;
+    private String tonna,kilog,gramm ;
 
 
     @Override
@@ -40,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         in_kilo = findViewById(R.id.in_kilo);
         in_grm = findViewById(R.id.in_gram);
         save_btn = findViewById(R.id.save_btn);
+        dataBase = new DataBase(this);
         spinner();
         inputText();
 
@@ -52,11 +57,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-
+           tonna = in_ton.getText().toString();
+           kilog = in_kilo.getText().toString();
+           gramm = in_grm.getText().toString();
+           dataBase.insertData(tonna,kilog,gramm);
             }
         });
-
     }
+
+
 
   ////spinner
     public void spinner(){

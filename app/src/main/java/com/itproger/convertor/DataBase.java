@@ -39,12 +39,12 @@ public class DataBase extends SQLiteOpenHelper {
             onCreate(db);
         }
 
-        public void insertData(String task){
+        public void insertData(String  ton, String kg , String grm){
             SQLiteDatabase db = this.getWritableDatabase();
             ContentValues values = new ContentValues();
-            values.put(db_ton,  task);
-            values.put( db_kg,  task);
-            values.put(db_grm, task);
+            values.put(db_ton,  ton);
+            values.put( db_kg,  kg);
+            values.put(db_grm, grm);
             db.insertWithOnConflict(db_table,null, values, SQLiteDatabase.CONFLICT_REPLACE);
         }
 
