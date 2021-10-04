@@ -10,5 +10,6 @@
     <string name="text_input">Введите число:</string>
     <string name="save_btn">Сохранить</string>
     <string name="list_btn">Страница списка</string>
+    <string name="delete_btn">Удалить</string>
 
 </resources>

@@ -16,27 +16,13 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="64dp"
         android:layout_marginLeft="64dp"
-        android:layout_marginTop="49dp"
+        android:layout_marginTop="32dp"
         android:fontFamily="casual"
         android:gravity="center"
         android:text="@string/title"
         android:textColor="@color/white"
         android:textSize="32sp"
         android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/in_gram"
-        android:layout_width="304dp"
-        android:layout_height="37dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="52dp"
-        android:layout_marginLeft="52dp"
-        android:layout_marginTop="542dp"
-        android:textColor="@color/white"
-        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/textView8"
@@ -48,7 +34,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="52dp"
         android:layout_marginLeft="52dp"
-        android:layout_marginTop="498dp"
+        android:layout_marginTop="481dp"
         android:text="@string/grm_count"
         android:textColor="@color/white"
         android:textSize="20sp" />
@@ -63,7 +49,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="52dp"
         android:layout_marginLeft="52dp"
-        android:layout_marginTop="449dp"
+        android:layout_marginTop="432dp"
         android:textColor="@color/white"
         android:textSize="20sp" />
 
@@ -77,7 +63,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="52dp"
         android:layout_marginLeft="52dp"
-        android:layout_marginTop="405dp"
+        android:layout_marginTop="388dp"
         android:text="@string/kilo_count"
         android:textColor="@color/white"
         android:textSize="20sp" />
@@ -91,7 +77,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="52dp"
         android:layout_marginLeft="52dp"
-        android:layout_marginTop="311dp"
+        android:layout_marginTop="294dp"
         android:text="@string/ton_count"
         android:textColor="@color/white"
         android:textSize="20sp" />
@@ -106,7 +92,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="52dp"
         android:layout_marginLeft="52dp"
-        android:layout_marginTop="355dp"
+        android:layout_marginTop="338dp"
         android:textColor="@color/white"
         android:textSize="20sp" />
 
@@ -120,7 +106,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="52dp"
         android:layout_marginLeft="52dp"
-        android:layout_marginTop="206dp"
+        android:layout_marginTop="189dp"
         android:contentDescription="@string/grm" />
 
     <EditText
@@ -133,7 +119,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="48dp"
         android:layout_marginLeft="48dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="99dp"
         android:ems="10"
         android:fontFamily="casual"
         android:hint="@string/text_input"
@@ -143,20 +129,19 @@
         android:textColorHint="@color/white"
         android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/save_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <TextView
+        android:id="@+id/in_gram"
+        android:layout_width="304dp"
+        android:layout_height="37dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="37dp"
-        android:layout_marginLeft="37dp"
-        android:layout_marginBottom="72dp"
-        android:background="@color/teal_200"
-        android:fontFamily="casual"
-        android:onClick="save"
-        android:text="@string/save_btn" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="525dp"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/list_btn"
@@ -165,11 +150,28 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="197dp"
-        android:layout_marginLeft="197dp"
-        android:layout_marginBottom="71dp"
+        android:layout_marginStart="212dp"
+        android:layout_marginLeft="212dp"
+        android:layout_marginBottom="43dp"
         android:background="@color/teal_200"
         android:fontFamily="casual"
-        android:text="@string/list_btn" />
+        android:text="@string/list_btn"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginBottom="45dp"
+        android:background="@color/teal_200"
+        android:fontFamily="casual"
+        android:onClick="save"
+        android:text="@string/save_btn"
+        tools:ignore="TextContrastCheck" />
 
 </RelativeLayout>

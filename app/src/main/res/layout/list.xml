@@ -1,6 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
+    <TextView
+        android:layout_width="138dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="casual"
+        android:gravity="center_vertical"
+        android:text="@string/kilo"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/out_kilo"
+        android:layout_width="98dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="70dp"
+        android:contentDescription="@string/kilo"
+        android:gravity="center_vertical"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/out_ton"
+        android:layout_width="98dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/ton"
+        android:gravity="center_vertical"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="98dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="casual"
+        android:gravity="center_vertical"
+        android:text="@string/ton"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="138dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="120dp"
+        android:fontFamily="casual"
+        android:gravity="center_vertical"
+        android:text="@string/grm"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/out_grm"
+        android:layout_width="98dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="120dp"
+        android:contentDescription="@string/grm"
+        android:gravity="center_vertical"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/delete_btn"
+        android:layout_width="109dp"
+        android:layout_height="135dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/teal_700"
+        android:fontFamily="casual"
+        android:text="@string/delete_btn"
+        android:textSize="20sp" />
 </RelativeLayout>

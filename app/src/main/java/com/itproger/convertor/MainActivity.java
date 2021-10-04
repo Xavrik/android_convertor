@@ -3,6 +3,7 @@ package com.itproger.convertor;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView in_grm;
     private String item;
     private DataBase dataBase;
-    private Button save_btn;
+    private Button save_btn,list_btn;
     private String tonna,kilog,gramm ;
 
 
@@ -44,16 +45,12 @@ public class MainActivity extends AppCompatActivity {
         in_kilo = findViewById(R.id.in_kilo);
         in_grm = findViewById(R.id.in_gram);
         save_btn = findViewById(R.id.save_btn);
+        list_btn = findViewById(R.id.list_btn);
         dataBase = new DataBase(this);
+
         spinner();
         inputText();
-
-
-
-    }
-
-    public void save(){
-        save_btn.setOnClickListener(new View.OnClickListener() {
+                save_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -63,7 +60,45 @@ public class MainActivity extends AppCompatActivity {
            dataBase.insertData(tonna,kilog,gramm);
             }
         });
+        list_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent("android.intent.action.SecondActivity");
+                startActivity(intent);
+
+            }
+        });
+
+      //  save();
+
+
+
     }
+////save in db
+//    public void save(){
+//        save_btn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//           tonna = in_ton.getText().toString();
+//           kilog = in_kilo.getText().toString();
+//           gramm = in_grm.getText().toString();
+//           dataBase.insertData(tonna,kilog,gramm);
+//            }
+//        });
+//    }
+
+//    public void dataList(){
+//        list_btn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent("android.intent.action.SecondActivity");
+//                startActivity(intent);
+//
+//            }
+//        });
+//
+//    }
 
 
 
